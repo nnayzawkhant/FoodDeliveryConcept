@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.links{
+    display: flex;
+}
+.links a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    /* Gray/second-text */
+    color: #9093A6;
+    margin: 0 30px;
+}
+.navigation{
+    cursor: pointer;
+}
+.menu{
+    position: absolute;
+    right:30px;
+    top: 70px;
+    background: #F2F4FA;
+    padding: 30px;
+    border-radius: 10px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Gray/second-text */
+
+    color: #9093A6;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: aqua;
+    border-bottom-style: solid;
+    transition: all 0.3s ease;
+}
+.Call{
+    display: flex;
+    align-items: center;
+}
+.Call .number p{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Gray/Dark */
+
+    color: #3F4255;
+}
+.Call .number span{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/second-text */
+
+    color: #9093A6;
+}
+.Food-court{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 64px;
+    /* or 110% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    /* Gray/Dark */
+    color: #3F4255;
+    margin-bottom: 100px;
+}
+.Home button span{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    text-align: center;
+    letter-spacing: 0.5px;
+    /* Gray/Dark */
+    color: #3F4255;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.Home button{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* or 133% */
+    text-align: center;
+    /* Gray/Dark */
+    color: #3F4255;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #FFE145;
+    border-radius: 4px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+.Home button:hover{
+    color: #FFFFFF;
+    background-color: #B79C10;
+    border-radius: 4px;
+}
+.Home button span:hover{
+    color: #FFFFFF;
+    background-color: #B79C10;
+}
+.Bg img{
+    max-width: 700px;
+}
+.Base{
+    display: flex;
+    gap: 3rem;
+    margin-top: -30px;
+}
+.Time {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Time p{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    /* Gray/Dark */
+    color: #3F4255;
+}
+.restaurants{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.restaurants h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    /* Gray/Dark */
+    color: #3F4255;
+}
+.restaurants button{
+    background: #F2F4FA;
+    border-radius: 4px;
+    border: 0;
+    padding: 5px 20px;
+}
+.Mainfood{
+    display: flex;
+    gap: 1rem;
+}
+.Food{
+    text-align: center !important;
+}
+.Food .Image{
+    text-align: center !important;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.Food .Image img{
+    max-width: 100px;
+}
+.nearest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F4FA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.rest h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+
+    /* Gray/Dark */
+
+    color: #3F4255;
+}
+.rest p{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Gray/Dark */
+
+    color: #3F4255;
+    }
+.Delivery-address{
+    align-items: center;
+    display: flex;
+    background: #FFFFFF;
+    /* Base shadow */
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    gap: 1rem;
+    text-align: center;
+    padding: 1px;
+}
+.Delivery-address input{
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    width: 336px;
+}
+.Delivery-address button{
+    background: #FFE145;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 30px;
+    width: 88px;
+    text-align: center;
+    gap: 10px;
+    border: 0;
+}
+::placeholder{
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Gray/second-text */
+
+    color: #9093A6;
+}
+.up-specialites{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.up-specialites h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    /* or 178% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    /* Gray/Dark */
+    color: #3F4255;
+}
+.up-specialites button{
+    background: #F2F4FA;
+    border-radius: 4px;
+    border: 0;
+    padding: 5px 20px;
+}
+.down-specialites{
+    display: flex;
+    justify-content: space-between;
+
+}
+.Bagel{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center !important;
+    padding: 10px;
+    align-items: center;
+    background: #FFFFFF;
+    /* Elevation/Cards-Defoult */
+    box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+    border-radius: 6px;
+}
+
+.Bagel img{
+    width: 50px !important;
+    
+}
+.mainCard{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url(photo/bgg.png);
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card .left-card h1{
+    height: 127px;
+    width: 127px;
+    border: 1px solid #B79C10;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 64px;
+    /* or 110% */
+    letter-spacing: 0.05em;
+    /* Gray/Dark */
+    color: #3F4255;
+}
+.right-card{
+    position: absolute;
+    top: 30px;
+    
+}
+.card p{
+    position: relative;
+    margin-top: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    /* Gray/Dark */
+
+    color: #3F4255;
+}
+.Map img{
+    width: 100%;
+    padding: 30px;
+}
+.Yellowkitchen{
+    padding: 30px;
+}
+.instagram h1 span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    /* identical to box height, or 178% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    /* Text/Dark */
+    color: #313030;
+}
+.instagram {
+    margin-bottom: 20px;
+}
+.instagram h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 64px;
+    /* identical to box height, or 178% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    /* Text/Dark */
+    color: gray;
+}
+
+.Mainfooter{
+    padding: 40px 70px;
+    background: #3F4255;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer .frame1 img{
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+.frame1 hr{
+    height: 0.5px;
+    background: #FFFFFF;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.frame1 .google{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame1 .google img{
+    width: 85px;
+}
+
+.footer .frame2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner{
+    margin: 0 30px;
+}
+.inner h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+.inner ul li{
+    list-style: none;
+}
+.inner ul li a{
+    text-decoration: none;
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Gray/light */
+
+    color: #D4D7E6;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.bottom .right-bottom a{
+    margin: 0 20px;
+}
+.bottom .left-bottom a{
+    text-decoration: none;
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    align-items: center;
+    /* White */
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+@media (max-width: 900px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .Food-court{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        position: relative;
+    }
+    .menu .Call{
+        width: 100%;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a{
+        width: 100%;
+    }
+    .Home {
+        align-items: center;
+        text-align: center;
+    }
+    .Home h1{
+        font-size: 40px;
+    }
+    .Home h1 br{
+        display: none;
+    }
+    .Bg img{
+        width: 100%;
+    }
+    .Base{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        
+    }
+    .nearest{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    .rest h1 br{
+        display: none;
+    }
+    .Delivery-address{
+        width: 100%;
+    }
+    .Delivery-address input{
+        max-width:100% ;
+    }
+    .mainCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Yellowkitchen .instagram h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Mainfooter{
+        padding: 0;
+
+    }
+    .footer{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+        
+    }
+    .frame2{
+        display: block;
+        gap: 1rem;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .bottom{
+        display: block;
+    }
+}
